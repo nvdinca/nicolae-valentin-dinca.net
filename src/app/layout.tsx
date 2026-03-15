@@ -7,6 +7,7 @@ import CookieConsentBanner from "@/components/CookieConsentBanner";
 import ThemeProvider from "@/components/ThemeProvider";
 import BackToTop from "@/components/BackToTop";
 import JsonLd from "@/app/JsonLd";
+import { Analytics } from "@vercel/analytics/react";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -96,6 +97,7 @@ export default function RootLayout({
           <Footer />
           <CookieConsentBanner />
           <BackToTop />
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
